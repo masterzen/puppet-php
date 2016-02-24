@@ -146,6 +146,7 @@ define php::version(
         Package['openssl'],
         Package['curl'],
         Package['libxml2'],
+        Package['bzip2']
       ],
       notify            => Exec["phpenv-rehash-post-install-${patch_version}"],
       configure_params  => $configure_params,
